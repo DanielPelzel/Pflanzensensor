@@ -190,4 +190,22 @@ Temporary Items
 
 .Idea/
 
+# KiCad - Projektweite temporäre Dateien und Backups
+*-backups/
+*.lck
+*.kicad_prl
+*.bak
+*~
+
+# Automatische Rettungsdateien (Autosave)
+#auto_saved_files#
+
+# Falls du später Simulationen machst (Ngspice)
+*.sch-bak
+*.pcb-bak
+
+# Falls du die fertigen Dateien für die Fabrik erstellst (Gerber)
+# Manche wollen diese in Git, aber meistens generiert man sie frisch.
+# Wenn du sie ignorieren willst, entferne die Raute vor der nächsten Zeile:
+# /Gerber/
 # End of https://www.toptal.com/developers/gitignore/api/macos,platformio,c++,clion
