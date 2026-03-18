@@ -5,7 +5,9 @@
 	(uuid "8de4a77e-f397-4be0-855f-b0d8cdf8b370")
 	(paper "A5")
 	(title_block
-		(title "Pflanzensensor V1.0")
+		(title "Pflanzensensor")
+		(date "2026-03-18")
+		(rev "1.0")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Socket"
