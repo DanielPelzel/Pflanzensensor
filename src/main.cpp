@@ -2,7 +2,8 @@
 
 int feuchtigkeit = 0;
 int feuchtigkeit_prozent = 0;
-bool  an = false;
+int Luftfeuchtigkeit = 464;
+int Wasserfeuchtigkeit = 191;
 
 void setup() {
 
@@ -17,7 +18,8 @@ void loop() {
 
     //Misst Feuchtigkeit und sendet Prozentwert an Computer
     feuchtigkeit = analogRead(A0);
-    feuchtigkeit_prozent  = map(feuchtigkeit, 464, 191, 0, 100);
+    feuchtigkeit_prozent  = map(feuchtigkeit, Luftfeuchtigkeit, Wasserfeuchtigkeit, 0, 100);
+    feuchtigkeit_prozent = constrain(feuchtigkeit_prozent, 0, 100);  //Begrenzt Wert auf zischen 0-100
     Serial.println(feuchtigkeit_prozent);
 
 
