@@ -9,3 +9,8 @@ Microcontroller Arduino R3 Uno
 220Ohm Resistor   
 LED Rot   
 Kapazitiver Bodenfeuchtigkeitssensor (Korrosionsbeständig!!)  
+
+## Pin Belegung 
+Sensor Data - A0
+Sensor plus - 5V
+Diode - 13
